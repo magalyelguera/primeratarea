@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cultura general</title>
+    <!--Pusimos el logo de laboratoria al lado de nuestro título-->
+  <link rel="icon" href="img/laboratoria.ico">
+  <!--linkamos al archivo extreno css-->
+  <link rel="stylesheet" href="main.css">
+
+
+  </head>
+  <body >
+    <!--Agregamos una imagen de fondo-->
+    <div class="fondo">
+        <a href="#"><img src="img/fondo.png"  alt="" width="1399"height="200"></a>
+    </div>
+    <!--Agregamos primera línea horizontal-->
+    <hr>
+
+   <!--Agregamos un título-->
+    <header>
+    <h1 >Cultura General</h1>
+   </header>
+    <!--Agregamos segunda línea horizontal-->
+    <hr>
+
+    <!--Agregamos código javascript dentro de html semántico-->
+<main class="welcome">
+    <script type="text/javascript">
+      const name=prompt("¿Cuál es tu nombre");
+      const lastname=prompt("¿Cuál es tu apellido");
+        if (name!=='' && lastname!='')
+    {
+    document.write(`BIENVENIDO ${name.toUpperCase()} ${lastname.toUpperCase()}`)
+    }else {
+    document.write('INGRESE UN NOMBRE');
+
+   }
+    </script>
+  </main>
+
+  <!--
+  //Primera forma de utilizar input
+  <input id="user" type="text">
+  <button id="next">siguiente</button>
+
+  <script type="text/javascript">
+  const btn = document.getElementById('btn');
+  // capturar el input
+  const next = document.getElementById('next');
+
+  next.addEventListener('click', function() {
+    const userName = document.getElementById('user').value;
+    document.write("BIENVENIDA " + userName.toUpperCase());
+  })
+  </script>-->
+
+
+<!--Segunda forma de utilizar input
+
+  <p>Ingresa tu Nombre
+  <input id="user" type="text">
+  <button id="next">siguiente</button>
+</p>
+
+  <script type="text/javascript">
+  const btn = document.getElementById('btn');
+  // capturar el input
+  const next = document.getElementById('next');
+
+  next.addEventListener('click', function() {
+    const userName = document.getElementById('user').value;
+    alert("BIENVENIDA " + userName.toUpperCase());
+  })
+  </script>
+  -->
+
+   <!--Agregamos un botón para dirigirnos a la página de Opciones-->
+
+    <div class="button">
+
+    <button onclick="location.href='option.html'">Elige una opción</button>
+
+   </div>
+
+  </body>
+</html>
